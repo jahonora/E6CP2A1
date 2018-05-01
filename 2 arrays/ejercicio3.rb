@@ -5,3 +5,18 @@
  # 4. Crear un método que incrementa todos los elementos en una unidad y devuelva un arreglo nuevo.
 
 a = [1,2,3,9,1,4,5,2,3,6,6]
+
+puts "1.- **********"
+a.reject!{|e| e.even?}
+puts a
+puts "2.- **********"
+suma = 0
+a.each{|e| suma += e }
+puts suma
+puts "3.- **********"
+suma = 0
+a.each{|e| suma += e }
+puts suma/a.count
+puts "4.- **********"
+a = a.map{|e| e+1}
+puts a
