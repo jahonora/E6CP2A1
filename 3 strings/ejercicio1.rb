@@ -5,3 +5,10 @@
 
 cadena = 'Hola Mundo!'
 caracter = 'o'
+
+def lookup (cadena, caracter)
+	cadena.include? caracter
+end
+
+puts lookup(cadena, caracter)
+puts lookup(cadena, "Y")
